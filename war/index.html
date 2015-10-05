@@ -1,70 +1,66 @@
 <!doctype html>
 <html>
-<head>
-	<title> BierHier project </title>
-
-<Ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">Verenigingen </a></li>
-<li><a href="#">link 3</a></li>
-<li><a href="#">link 4</a></li>
-<li><a href="#">link 5</a></li>
-<li><a href="#">link 6</a></li>
-</ul>
-
-<style>
-	ul{
-list-style: none;
-padding: 10px 0 0 0;
-}
-
-li{
-display: inline;
-margin: 0 10px 0 0;
-}
-
-a{
-font-family: Verdana, Arial, Helvetica, sans-serif;
-font-weight: bold;
-text-decoration: none;
-padding: 6px 5px 0 5px;
-}
-
-a:link, a:visited{
-background: transparent url(../_img/hor_rood.gif) no-repeat top center;
-border-top: 5px solid #DA2552;
-border-bottom: 5px solid #DA2502;
-
-color: #000;
-}
-
-a:hover, a:active{
-background: transparent url(../_img/hor_geel.gif) no-repeat top center;
-border-top: 3px solid #F5EC00;
-border-bottom: 2px solid #F5EC00;
-color: #999;
-}
-
-ul{
-list-style: none;
-}
-
-li{
-display: inline;
-margin: 0 10px 0 0;
-}
-
-
-</style>
-
-<h1> Studenten </h1>
-
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d78008.56939740255!2d5.161337630987222!3d52.338358524010395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c6112d7caea8d1%3A0xa5db718bcd18e2ac!2sROC+Flevoland+locatie+Almere+Stad!5e0!3m2!1snl!2snl!4v1441795288483" width="400" height="300" 
-frameborder="0" style="border:0" allowfullscreen></iframe>
-
-
-
-</head>
-<body>
-</body>
+    <!--@font-face voegt de "bevan" font toe aan de browser, #body maakt de pagina 90% van de breedte van het scherm,
+        nav en a.nav zijn de dingen die de navigatiebalk stylen en de links daarvan, #footer is om de footer beneden op zijn plek te houden
+        en de tekst daarin te stylen-->
+    <head>
+        <title>Blog Pagina</title>
+        <style>
+        @font-face {
+            font-family: bevan;
+            src: url(Bevan.ttf);
+            font-weight: 400;
+        }
+        #body {
+            font-family: bevan;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        nav {
+            background-color: black;
+            text-align: center;
+            min-height: 5vh;
+            height: auto;
+        }
+        a.nav {
+            font-size: 2vh;
+            color: white;
+            margin: 2vh;
+            line-height: 5vh;
+        }
+        #footer {
+            background-color: dimgrey;
+            width: inherit;
+            height: 25px;
+            position: absolute;
+            bottom: 0;
+            font-family: Raleway;
+            font-weight: 400;
+            color: white;
+            text-align: center;
+        </style>
+    </head>
+    <body>
+        <!--navigatiebalk, zie style voor uitleg-->
+        <div id="body">
+            <!--navigatiebalk, zie style voor uitleg-->
+            <nav>
+                <a class="nav" href="index.html">Hoofdpagina</a>
+                <a class="nav" href="index.html">Recepten voor kamerbewoners</a>
+                <a class="nav" href="index.html">Bars en restaurants</a>
+                <a class="nav" href="index.html">Concerten in Amsterdam</a>
+                <a class="nav" href="index.html">Contact</a>
+            </nav>
+            <!--content, eigen invulling hierzo, kan moeilijk alles doen :P-->
+            <div id="content">
+                Insert Content Hierzo lmao..
+            </div>
+            <!--footer, zie style voor uitleg-->
+            <div id="footer">
+                <a href="sitemap.html">Sitemap</a>
+                copyright © roc-dev.com 2015
+            </div>
+        </div>
+    </body>    
 </html>
