@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+    <!--@font-face voegt de "bevan" font toe aan de browser, #body maakt de pagina 90% van de breedte van het scherm,
+        nav en a.nav zijn de dingen die de navigatiebalk stylen en de links daarvan, #footer is om de footer beneden op zijn plek te houden
+        en de tekst daarin te stylen-->
+    <head>
+        <title>TEMPLATE BIER HIER NIET STELEN COPYRIGHT JE MOEDER</title>
+        <style>
+        @font-face {
+            font-family: bevan;
+            src: url(Bevan.ttf);
+            font-weight: 400;
+        }
+        #body {
+            font-family: bevan;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        nav {
+            background-color: black;
+            text-align: center;
+            min-height: 5vh;
+            height: auto;
+        }
+        a.nav {
+            font-size: 2vh;
+            color: white;
+            margin: 2vh;
+            line-height: 5vh;
+        }
+        #footer {
+            background-color: dimgrey;
+            width: inherit;
+            height: 25px;
+            position: absolute;
+            bottom: 0;
+            font-family: Raleway;
+            font-weight: 400;
+            color: white;
+            text-align: center;
+        </style>
+    </head>
+    <body>
+        <!--navigatiebalk, zie style voor uitleg-->
+        <div id="body">
+            <!--navigatiebalk, zie style voor uitleg-->
+            <nav>
+                <a class="nav" href="index.html">Hoofdpagina</a>
+                <a class="nav" href="index.html">Recepten voor kamerbewoners</a>
+                <a class="nav" href="index.html">Bars en restaurants</a>
+                <a class="nav" href="index.html">Concerten in Amsterdam</a>
+                <a class="nav" href="index.html">Contact</a>
+            </nav>
+            <!--content, eigen invulling hierzo, kan moeilijk alles doen :P-->
+            <div id="content">
+                Insert Content Hierzo lmao..
+            </div>
+            <!--footer, zie style voor uitleg-->
+            <div id="footer">
+                <a href="sitemap.html">Sitemap</a>
+                copyright © roc-dev.com 2015
+            </div>
+        </div>
+    </body>    
+</html>
